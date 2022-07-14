@@ -5,16 +5,16 @@ import java.time.LocalDate;
 
 public class Pagamento {
 
-    private String descricao;
     private Tipo tipo;
     private Double valor;
+    private String descricao;
     private LocalDate data;
 
     // contructor
     public Pagamento(Tipo tipo, Double valor, String descricao) {
-        this.descricao = descricao;
         this.tipo = tipo;
         this.valor = valor;
+        this.descricao = descricao;
         this.data = LocalDate.now();
     }
 
